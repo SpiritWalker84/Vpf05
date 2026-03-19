@@ -134,14 +134,15 @@ def build_tools_chain(llm: RunnableLambda):
 
 def build_generation_chain(llm: RunnableLambda):
     system = (
-        "Ты BI-аналитик. Сгенерируй отчет в markdown только по переданным фактам.\n"
-        "Обязательные разделы:\n"
+        "You are a BI analyst. Generate a markdown report using only provided facts.\n"
+        "Write the report in Russian language.\n"
+        "Required section headings (exact text):\n"
         "1) Краткое резюме\n"
         "2) Ключевые метрики\n"
         "3) Сегменты и тренды\n"
         "4) Качество данных\n"
         "5) Рекомендации\n"
-        "Верни ТОЛЬКО markdown."
+        "Return ONLY markdown."
     )
     human = (
         "Goal: {task}\n"
