@@ -42,6 +42,12 @@ python3 script.py "Подготовь отчет по русскоязычном
 - итоговый отчет: `report.md`
 - промежуточные артефакты: `artifacts/profile.json`, `artifacts/analysis.json`, `artifacts/tools.json`, `artifacts/draft_report.md`
 
+## Пример результата
+
+В репозитории уже есть пример сгенерированного отчета:
+
+- [`report.md`](./report.md)
+
 ## Структура проекта
 
 ```text
